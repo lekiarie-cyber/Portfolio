@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Hover Animation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 2rem;
+      background-color: #f5f5f5;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    /* Grid container */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+    }
+
+    /* Individual project card */
+    .project {
+      background-color: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    /* Smooth hover animation */
+    .project:hover {
+      transform: translateY(-10px) scale(1.05);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    /* Optional: project title and description */
+    .project h3 {
+      margin: 0.5rem 0;
+      font-size: 1.2rem;
+      color: #333;
+    }
+
+    .project p {
+      color: #666;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>My Projects</h1>
+
+  <div class="projects">
+    <div class="project">
+      <h3>Project One</h3>
+      <p>A brief description of Project One.</p>
+    </div>
+    <div class="project">
+      <h3>Project Two</h3>
+      <p>A brief description of Project Two.</p>
+    </div>
+    <div class="project">
+      <h3>Project Three</h3>
+      <p>A brief description of Project Three.</p>
+    </div>
+    <div class="project">
+      <h3>Project Four</h3>
+      <p>A brief description of Project Four.</p>
+    </div>
+  </div>
+
+</body>
+</html>
